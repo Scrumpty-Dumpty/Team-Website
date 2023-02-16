@@ -1,13 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
-  <title>Hello World Azure Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/output.css" rel="stylesheet">
+  <title>ScrumptyDumpty | Home</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
 </head>
-<body>
-  <h1>Azure Static Website Template</h1>
-  <p>This page is a sample page for a “Hello World” Azure Static Website Template. The page contains an HTML validation warning. 
-    Can you find and fix that warning? What about the curly quotes? Do they current work in all browsers? Can you fix the curly 
-    quotes also? And what about proper indenting?</p>
+
+<body class="bg-white dark:bg-black text-black dark:text-white">
+  <!-- Hero Section -->
+  <section
+    class="text-white flex flex-col min-h-screen bg-center bg-cover bg-blend-overlay bg-black/60"
+    style="background-image: url('./assets/img/team-photo.jpg')">
+
+    <!-- Navbar -->
+    <div class="w-10/12 mx-auto flex items-center justify-between h-20">
+  
+        <!-- Navbar Logo -->
+        <a href="./index.html"><img src="./assets/img/logo.svg" alt="ScrumptyDumpty's Logo" class="w-10 h-10"></a>
+
+        <!-- Navbar Menu -->
+        <nav class="flex items-center gap-10">
+          <a href="./index.html" class="hidden sm:block">Home</a>
+          <a href="#team">Meet the Team</a>
+          <a href="" class="cursor-not-allowed">Projects</a>
+          <a href="https://github.com/Scrumpty-Dumpty" target="_blank">
+            <i class="fa-brands fa-github text-2xl hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </nav>
+
+    </div>
+
+    <!-- Hero Section Content -->
+    <div class="flex-1 flex items-center flex-wrap">
+      <div class="text-center mx-auto space-y-5">
+        <h1 class="text-5xl sm:text-6xl font-semibold">ScrumptyDumpty</h1>
+        <p class="font-light text-2xl">We create amazing experiences.</p>
+        <a class="cursor-not-allowed px-5 py-2 inline-block rounded-full bg-white text-black font-medium" href="">
+          Explore our Projects
+        </a>
+      </div>
+    </div>
+    <!-- Hero Faded Bottom -->
+    <div class="h-1/4 absolute bottom-0 inset-x-0 bg-gradient-to-t from-white/30 dark:from-black"></div>
+  </section>
+
+  <!-- Meet the Team Section -->
+  <section id="team" class="w-9/12 mx-auto py-12">
+
+    <div class="flex flex-col items-center justify-center gap-5">
+      <h2 class="text-4xl font-bold">Meet our Team</h2>
+      <p class="text-xl text-gray-500 text-center">We're a dynamic group of students who are passionate about what we
+        do.</p>
+    </div>
+
+    <!-- Member Cards -->
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Member 1 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/julian-portrait.JPG"
+          alt="Julian Rocha's Portrait">
+        <h3 class="mt-3 font-medium">Julian Rocha</h3>
+        <p class="text-gray-500">CS + Music</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="https://github.com/Julian-Rocha" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Member 2 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+          src="https://source.unsplash.com/IF9TK5Uy-KI" alt="Amna Tasneem's Portrait">
+        <h3 class="mt-3 font-medium">Amna Tasneem</h3>
+        <p class="text-gray-500">Major</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Member 3 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+          src="https://source.unsplash.com/d1UPkiFd04A" alt="Jakub Marzly's Portrait">
+        <h3 class="mt-3 font-medium">Jakub Marzly</h3>
+        <p class="text-gray-500">Major</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Member 4 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+          src="https://source.unsplash.com/p0B7ueoZz8E" alt="Luke Mendiola's Portrait">
+        <h3 class="mt-3 font-medium">Luke Mendiola</h3>
+        <p class="text-gray-500">Major</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Member 5 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+          src="https://source.unsplash.com/aoQ4DYZLE_E" alt="Khadija Khalek's Portrait">
+        <h3 class="mt-3 font-medium">Khadija Khalek</h3>
+        <p class="text-gray-500">Major</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Member 6 -->
+      <div class="p-5 flex flex-col items-center gap-1">
+        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+          src="https://source.unsplash.com/3JmfENcL24M" alt="James Barkauskas' Portrait">
+        <h3 class="mt-3 font-medium">James Barkauskas</h3>
+        <p class="text-gray-500">Major</p>
+        <div class="space-x-4">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-link text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github text-2xl text-gray-500 hover:text-black/70 dark:hover:text-white/70"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <p class="text-center">Copyright &copy
+      <script>document.write(new Date().getFullYear())</script> ScrumptyDumpty | All Rights Reserved
+    </p>
+  </footer>
 </body>
+
 </html>
