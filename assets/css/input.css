@@ -10,3 +10,17 @@
     font-family: Inter, system-ui, sans-serif;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: 100vh;
+    /* fall-back */
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+  }
+}
+
+nav a {
+  border-bottom: 1px solid transparent;
+}
