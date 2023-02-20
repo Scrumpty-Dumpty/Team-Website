@@ -1,195 +1,300 @@
 <!DOCTYPE html>
 <html lang="en-us" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>ScrumptyDumpty | Home</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./assets/css/output.css" rel="stylesheet">
-  <title>ScrumptyDumpty | Home</title>
-  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
-</head>
+  <body class="m-0 bg-white dark:bg-black text-black dark:text-white">
+    <!-- Hero Section -->
+    <section
+      class="flex min-h-screen flex-col bg-black/60 bg-cover bg-center text-white bg-blend-overlay"
+      style="background-image: url('./assets/img/team-photo.jpg')"
+    >
+      <!-- Navbar -->
+      <div class="mx-auto flex h-20 w-10/12 items-center justify-between">
+        <!-- Navbar Logo -->
+        <a href="./index.html"
+          ><img src="./assets/logo.svg" alt="logo" class="h-8 w-8"></a>
+        <!-- Navbar Menu -->
+        <div class="hidden sm:block">
+          <nav class="flex items-center gap-10">
+            <a href="./index.html" class="border-black pb-1 dark:border-white"
+              >Home</a
+            >
+            <a
+              href="#team"
+              class="pb-1 hover:border-black dark:hover:border-white"
+              >Meet the Team</a
+            >
+            <a
+              href=""
+              class="cursor-not-allowed pb-1 hover:border-black dark:hover:border-white"
+              >Projects</a
+            >
+            <a href="https://github.com/Scrumpty-Dumpty" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl hover:text-black/70 dark:hover:text-white/70"
+              ></i>
+            </a>
+          </nav>
+        </div>
+      </div>
 
-<body class="m-0 bg-white dark:bg-black text-black dark:text-white">
-  <!-- Hero Section -->
-  <section class="flex min-h-screen flex-col bg-black/60 bg-cover bg-center text-white bg-blend-overlay"
-    style="background-image: url('./assets/img/team-photo.jpg')">
-    <!-- Navbar -->
-    <div class="mx-auto flex h-20 w-10/12 items-center justify-between">
-      <!-- Navbar Logo -->
-      <a href="./index.html"><img src="./assets/logo.svg" alt="logo" class="h-8 w-8" /></a>
-      <!-- Navbar Menu -->
-      <div class="hidden sm:block">
-        <nav class="flex items-center gap-10">
-          <a href="./index.html" class="border-black pb-1 dark:border-white">Home</a>
-          <a href="#team" class="pb-1 hover:border-black dark:hover:border-white">Meet the Team</a>
-          <a href="" class="cursor-not-allowed pb-1 hover:border-black dark:hover:border-white">Projects</a>
-          <a href="https://github.com/Scrumpty-Dumpty" target="_blank">
-            <i class="fa-brands fa-github text-2xl hover:text-black/70 dark:hover:text-white/70"></i>
+      <!-- Hero Section Content -->
+      <div class="flex flex-1 items-center">
+        <div class="mx-auto space-y-5 text-center">
+          <h1 class="text-5xl font-semibold sm:text-6xl">Scrumpty Dumpty</h1>
+          <p class="text-xl font-light sm:text-2xl">
+            We create amazing experiences.
+          </p>
+          <a
+            class="cursor-not-allowed inline-block rounded-full bg-white px-5 py-2 font-medium text-black"
+            href=""
+          >
+            Explore our Projects
           </a>
-        </nav>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Hero Section Content -->
-    <div class="flex flex-1 items-center">
-      <div class="mx-auto space-y-5 text-center">
-        <h1 class="text-5xl font-semibold sm:text-6xl">Scrumpty Dumpty</h1>
-        <p class="text-xl font-light sm:text-2xl">We create amazing experiences.</p>
-        <a class="cursor-not-allowed inline-block rounded-full bg-white px-5 py-2 font-medium text-black" href="">
-          Explore our Projects </a>
+    <!-- Meet the Team Section -->
+    <section id="team" class="w-9/12 mx-auto py-12">
+      <div class="flex flex-col items-center justify-center gap-5">
+        <h2 class="text-4xl font-bold">Meet the Team</h2>
+        <p class="text-xl text-gray-500 text-center">
+          Click our faces to visit our personal websites!
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- Meet the Team Section -->
-  <section id="team" class="w-9/12 mx-auto py-12">
-    <div class="flex flex-col items-center justify-center gap-5">
-      <h2 class="text-4xl font-bold">Meet the Team</h2>
-      <p class="text-xl text-gray-500 text-center">Click our faces to visit our personal websites!</p>
-    </div>
-    <!-- Member Cards -->
-    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- Julian -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/julian-portrait.JPG"
-          alt="Julian Rocha's Portrait" usemap="#julian-map">
+      <!-- Member Cards -->
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Julian -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/julian-portrait.JPG"
+            alt="Julian Rocha's Portrait"
+            usemap="#julian-map"
+          >
           <map name="julian-map">
-            <area target="" alt="Julian Rocha's Portrait Map" title="Julian" href="https://witty-mud-057af8a10.2.azurestaticapps.net/" coords="117,10,141,21,151,39,154,61,154,75,148,85,147,97,135,105,123,110,111,108,102,99,98,83,93,68,93,56,85,51,89,38,96,28,103,19" shape="poly">
-        </map>
-        <a href="https://witty-mud-057af8a10.2.azurestaticapps.net/">
-          <h3 class="mt-3 font-medium">Julian Rocha</h3>
-        </a>
-        <p class="text-gray-500">CS + Music</p>
-        <div class="space-x-4">
-          <a href="mailto:julianrocha1@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+            <area
+              target=""
+              alt="Julian Rocha's Portrait Map"
+              title="Julian"
+              href="https://witty-mud-057af8a10.2.azurestaticapps.net/"
+              coords="117,10,141,21,151,39,154,61,154,75,148,85,147,97,135,105,123,110,111,108,102,99,98,83,93,68,93,56,85,51,89,38,96,28,103,19"
+              shape="poly"
+            >
+          </map>
+          <a href="https://witty-mud-057af8a10.2.azurestaticapps.net/">
+            <h3 class="mt-3 font-medium">Julian Rocha</h3>
           </a>
-          <a href="https://github.com/Julian-Rocha" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">CS + Music</p>
+          <div class="space-x-4">
+            <a href="mailto:julianrocha1@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/Julian-Rocha" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- Amna -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/amna-portrait.jpg"
-          alt="Amna Tasneem's Portrait" usemap="#amna-map">
-        <map name="amna-map">
-          <area target="" alt="Amna Tasneem's Portrait Map" title="Amna" href="https://wonderful-bay-079d54310.2.azurestaticapps.net/" coords="151,23,124,10,103,13,82,21,68,45,64,76,68,109,78,135,117,151,143,144,160,123,162,100,169,77,165,49" shape="poly">
-        </map>
-        <a href="https://wonderful-bay-079d54310.2.azurestaticapps.net/">
-          <h3 class="mt-3 font-medium">Amna Tasneem</h3>
-        </a>
-        <p class="text-gray-500">Computer Science</p>
-        <div class="space-x-4">
-          <a href="mailto:amnatasneem@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+        <!-- Amna -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/amna-portrait.jpg"
+            alt="Amna Tasneem's Portrait"
+            usemap="#amna-map"
+          >
+          <map name="amna-map">
+            <area
+              target=""
+              alt="Amna Tasneem's Portrait Map"
+              title="Amna"
+              href="https://wonderful-bay-079d54310.2.azurestaticapps.net/"
+              coords="151,23,124,10,103,13,82,21,68,45,64,76,68,109,78,135,117,151,143,144,160,123,162,100,169,77,165,49"
+              shape="poly"
+            >
+          </map>
+          <a href="https://wonderful-bay-079d54310.2.azurestaticapps.net/">
+            <h3 class="mt-3 font-medium">Amna Tasneem</h3>
           </a>
-          <a href="https://github.com/amnatasneem" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:amnatasneem@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/amnatasneem" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- Jakub -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/jakub-portrait.jpg"
-          alt="Jakub Marzly's Portrait" usemap="#jakub-map">
-        <map name="jakub-map">
-          <area target="" alt="Jakub" title="Jakub" href="https://getting-to-know-each-other-jz.azurewebsites.net/" coords="110,22,95,27,80,30,68,35,63,48,60,56,63,65,63,72,66,89,63,104,61,109,69,132,74,145,78,154,80,168,70,175,54,181,29,186,14,187,1,191,0,239,240,238,240,198,227,191,215,188,201,184,186,181,175,178,166,174,164,157,168,143,172,133,180,126,184,117,183,109,178,105,181,97,182,85,180,75,186,63,188,54,181,43,169,34,153,26,141,22,128,19" shape="poly">
-        </map>
-        <a href="">
-          <h3 class="mt-3 font-medium">Jakub Zmarzly</h3>
-        </a>
-        <p class="text-gray-500">Computer Programming</p>
-        <div class="space-x-4">
-          <a href="mailto:jakubtzmarzly@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+        <!-- Jakub -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/jakub-portrait.jpg"
+            alt="Jakub Marzly's Portrait"
+            usemap="#jakub-map"
+          >
+          <map name="jakub-map">
+            <area
+              target=""
+              alt="Jakub"
+              title="Jakub"
+              href="https://getting-to-know-each-other-jz.azurewebsites.net/"
+              coords="110,22,95,27,80,30,68,35,63,48,60,56,63,65,63,72,66,89,63,104,61,109,69,132,74,145,78,154,80,168,70,175,54,181,29,186,14,187,1,191,0,239,240,238,240,198,227,191,215,188,201,184,186,181,175,178,166,174,164,157,168,143,172,133,180,126,184,117,183,109,178,105,181,97,182,85,180,75,186,63,188,54,181,43,169,34,153,26,141,22,128,19"
+              shape="poly"
+            >
+          </map>
+          <a href="">
+            <h3 class="mt-3 font-medium">Jakub Zmarzly</h3>
           </a>
-          <a href="https://github.com/jakubzmarzly/" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">Computer Programming</p>
+          <div class="space-x-4">
+            <a href="mailto:jakubtzmarzly@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/jakubzmarzly/" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- Luke -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/luke-portrait.png"
-          alt="Luke Mendiola's Portrait" usemap="#luke-map">
-        <map name="luke-map">
-          <area target="" alt="luke" title="luke" href="https://blue-hill-07c252a10.2.azurestaticapps.net/getting-to-know-each-other-lm/index.html" coords="102,80,93,83,80,90,72,98,70,107,65,117,63,125,68,133,73,141,77,149,79,161,83,166,90,174,91,186,90,195,83,198,74,198,64,195,73,185,74,175,68,169,61,178,55,184,49,187,41,191,31,201,23,205,11,212,1,222,1,238,240,239,240,218,231,208,224,201,206,198,192,199,180,192,166,180,154,161,157,146,160,138,166,126,168,115,160,103,147,90,133,81,117,76" shape="poly">
-        </map>
-        <a href="https://blue-hill-07c252a10.2.azurestaticapps.net/getting-to-know-each-other-lm/index.html">
-          <h3 class="mt-3 font-medium">Luke Mendiola</h3>
-        </a>
-        <p class="text-gray-500">Computer Science</p>
-        <div class="space-x-4">
-          <a href="mailto:lukecmendiola@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+        <!-- Luke -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/luke-portrait.png"
+            alt="Luke Mendiola's Portrait"
+            usemap="#luke-map"
+          >
+          <map name="luke-map">
+            <area
+              target=""
+              alt="luke"
+              title="luke"
+              href="https://blue-hill-07c252a10.2.azurestaticapps.net/getting-to-know-each-other-lm/index.html"
+              coords="102,80,93,83,80,90,72,98,70,107,65,117,63,125,68,133,73,141,77,149,79,161,83,166,90,174,91,186,90,195,83,198,74,198,64,195,73,185,74,175,68,169,61,178,55,184,49,187,41,191,31,201,23,205,11,212,1,222,1,238,240,239,240,218,231,208,224,201,206,198,192,199,180,192,166,180,154,161,157,146,160,138,166,126,168,115,160,103,147,90,133,81,117,76"
+              shape="poly"
+            >
+          </map>
+          <a
+            href="https://blue-hill-07c252a10.2.azurestaticapps.net/getting-to-know-each-other-lm/index.html"
+          >
+            <h3 class="mt-3 font-medium">Luke Mendiola</h3>
           </a>
-          <a href="https://github.com/luke-mendi02" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:lukecmendiola@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/luke-mendi02" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- Khadija -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/khadija-portrait.jpeg" 
-        alt="Khadija Khalek's Portrait" usemap="#khadija-map">
+        <!-- Khadija -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/khadija-portrait.jpeg"
+            alt="Khadija Khalek's Portrait"
+            usemap="#khadija-map"
+          >
           <map name="khadija-map">
-            <area target="" alt="Khadija" title="Khadija" href="https://nice-cliff-0a98ab910.2.azurestaticapps.net" coords="112,2,133,0,147,0,155,1,167,4,176,12,182,19,187,28,194,38,199,52,202,67,208,81,207,97,207,111,208,122,208,133,204,142,200,151,197,172,196,188,190,197,188,203,196,208,207,207,213,210,223,213,231,216,238,226,236,239,1,238,3,215,12,214,22,214,22,206,23,194,33,192,38,182,34,173,33,162,31,153,27,139,27,129,24,111,24,95,28,83,31,66,34,57,36,49,44,35,48,23,60,15,74,9,82,3" shape="poly">
-        </map>
-        <a href="https://nice-cliff-0a98ab910.2.azurestaticapps.net" >
-          <h3 class="mt-3 font-medium">Khadija Khalek</h3>
-        </a>
-        <p class="text-gray-500">Computer Science</p>
-        <div class="space-x-4">
-          <a href="mailto:khadijaakhalek@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+            <area
+              target=""
+              alt="Khadija"
+              title="Khadija"
+              href="https://nice-cliff-0a98ab910.2.azurestaticapps.net"
+              coords="112,2,133,0,147,0,155,1,167,4,176,12,182,19,187,28,194,38,199,52,202,67,208,81,207,97,207,111,208,122,208,133,204,142,200,151,197,172,196,188,190,197,188,203,196,208,207,207,213,210,223,213,231,216,238,226,236,239,1,238,3,215,12,214,22,214,22,206,23,194,33,192,38,182,34,173,33,162,31,153,27,139,27,129,24,111,24,95,28,83,31,66,34,57,36,49,44,35,48,23,60,15,74,9,82,3"
+              shape="poly"
+            >
+          </map>
+          <a href="https://nice-cliff-0a98ab910.2.azurestaticapps.net">
+            <h3 class="mt-3 font-medium">Khadija Khalek</h3>
           </a>
-          <a href="https://github.com/khalekk" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:khadijaakhalek@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/khalekk" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- James -->
-      <div class="p-5 flex flex-col items-center gap-1">
-        <img class="w-60 h-60 rounded-full object-cover object-center shadow-xl" src="./assets/img/jimmy-portrait.jpg"
-        alt="James Barkauskas' Portrait" usemap="#jimmy-map">
+        <!-- James -->
+        <div class="p-5 flex flex-col items-center gap-1">
+          <img
+            class="w-60 h-60 rounded-full object-cover object-center shadow-xl"
+            src="./assets/img/jimmy-portrait.jpg"
+            alt="James Barkauskas' Portrait"
+            usemap="#jimmy-map"
+          >
           <map name="jimmy-map">
-            <area target="" alt="Jimmy" title="Jimmy" href="https://salmon-sea-067d9ae10.2.azurestaticapps.net/" coords="108,7,92,10,77,17,67,23,64,29,57,46,45,54,39,64,39,76,37,90,41,103,44,111,45,118,48,136,50,146,53,158,56,175,61,187,65,200,72,206,72,218,70,239,209,237,195,237,187,232,179,225,177,219,176,211,176,199,180,189,182,177,185,169,185,159,189,145,188,132,196,120,199,108,201,102,201,92,200,81,199,63,192,51,185,41,183,28,168,21,162,18,155,11,150,4,139,4,132,4,123,5" shape="poly">
-        </map>
-        <a href="https://salmon-sea-067d9ae10.2.azurestaticapps.net/">
-          <h3 class="mt-3 font-medium">Jimmy Barkauskas</h3>
-        </a>
-        <p class="text-gray-500">Computer Science</p>
-        <div class="space-x-4">
-          <a href="mailto:jamesbarkauskas@lewisu.edu" target="_blank">
-            <i
-              class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
+            <area
+              target=""
+              alt="Jimmy"
+              title="Jimmy"
+              href="https://salmon-sea-067d9ae10.2.azurestaticapps.net/"
+              coords="108,7,92,10,77,17,67,23,64,29,57,46,45,54,39,64,39,76,37,90,41,103,44,111,45,118,48,136,50,146,53,158,56,175,61,187,65,200,72,206,72,218,70,239,209,237,195,237,187,232,179,225,177,219,176,211,176,199,180,189,182,177,185,169,185,159,189,145,188,132,196,120,199,108,201,102,201,92,200,81,199,63,192,51,185,41,183,28,168,21,162,18,155,11,150,4,139,4,132,4,123,5"
+              shape="poly"
+            >
+          </map>
+          <a href="https://salmon-sea-067d9ae10.2.azurestaticapps.net/">
+            <h3 class="mt-3 font-medium">Jimmy Barkauskas</h3>
           </a>
-          <a href="https://github.com/JamesBarkauskas" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
-          </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:jamesbarkauskas@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/JamesBarkauskas" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="w-9/12 mx-auto py-5">
-    <p class="text-center">Copyright &copy
-      <script>document.write(new Date().getFullYear())</script> ScrumptyDumpty | All Rights Reserved
-    </p>
-  </footer>
-</body>
+    </section>
 
+    <!-- Footer -->
+    <footer class="w-9/12 mx-auto py-5">
+      <p class="text-center">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        ScrumptyDumpty | All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
