@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>ScrumptyDumpty | Home</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./assets/css/output.css" rel="stylesheet">
-  <title>ScrumptyDumpty | Home</title>
-  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
-</head>
+  <body class="m-0 bg-white dark:bg-black text-black dark:text-white">
+    <!-- Hero Section -->
+    <section
+      class="flex min-h-screen flex-col bg-black/60 bg-cover bg-center text-white bg-blend-overlay"
+      style="background-image: url('./assets/img/team-photo.jpg')"
+    >
+      <!-- Navbar -->
+      <div class="mx-auto flex h-20 w-10/12 items-center justify-between">
+        <!-- Navbar Logo -->
+        <a href="./index.html"
+          ><img src="./assets/logo.svg" alt="logo" class="h-8 w-8"></a>
+        <!-- Navbar Menu -->
+        <div class="hidden sm:block">
+          <nav class="flex items-center gap-10">
+            <a href="./index.html" class="border-black pb-1 dark:border-white"
+              >Home</a
+            >
+            <a
+              href="#team"
+              class="pb-1 hover:border-black dark:hover:border-white"
+              >Meet the Team</a
+            >
+            <a
+              href=""
+              class="cursor-not-allowed pb-1 hover:border-black dark:hover:border-white"
+              >Projects</a
+            >
+            <a href="https://github.com/Scrumpty-Dumpty" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl hover:text-black/70 dark:hover:text-white/70"
+              ></i>
+            </a>
+          </nav>
+        </div>
+      </div>
 
 <body class="m-0 bg-white dark:bg-black text-black dark:text-white">
   <!-- Hero Section -->
@@ -26,17 +61,17 @@
           <a href="https://github.com/Scrumpty-Dumpty" target="_blank">
             <i class="fa-brands fa-github text-2xl hover:text-black/70 dark:hover:text-white/70"></i>
           </a>
-        </nav>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Hero Section Content -->
-    <div class="flex flex-1 items-center">
-      <div class="mx-auto space-y-5 text-center">
-        <h1 class="text-5xl font-semibold sm:text-6xl">Scrumpty Dumpty</h1>
-        <p class="text-xl font-light sm:text-2xl">We create amazing experiences.</p>
-        <a class="cursor-not-allowed inline-block rounded-full bg-white px-5 py-2 font-medium text-black" href="">
-          Explore our Projects </a>
+    <!-- Meet the Team Section -->
+    <section id="team" class="w-9/12 mx-auto py-12">
+      <div class="flex flex-col items-center justify-center gap-5">
+        <h2 class="text-4xl font-bold">Meet the Team</h2>
+        <p class="text-xl text-gray-500 text-center">
+          Click our faces to visit our personal websites!
+        </p>
       </div>
     </div>
   </section>
@@ -72,6 +107,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">CS + Music</p>
+          <div class="space-x-4">
+            <a href="mailto:julianrocha1@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/Julian-Rocha" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Amna -->
@@ -97,6 +145,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:amnatasneem@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/amnatasneem" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Jakub -->
@@ -121,6 +182,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">Computer Programming</p>
+          <div class="space-x-4">
+            <a href="mailto:jakubtzmarzly@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/jakubzmarzly/" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Luke -->
@@ -146,6 +220,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:lukecmendiola@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/luke-mendi02" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Khadija -->
@@ -170,6 +257,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:khadijaakhalek@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/khalekk" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- James -->
@@ -194,6 +294,19 @@
             <i
               class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"></i>
           </a>
+          <p class="text-gray-500">Computer Science</p>
+          <div class="space-x-4">
+            <a href="mailto:jamesbarkauskas@lewisu.edu" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+            <a href="https://github.com/JamesBarkauskas" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl text-gray-500 hover:text md:hover:text-black/70 md:dark:hover:text-white/70"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -207,4 +320,15 @@
   </footer>
 </body>
 
+    <!-- Footer -->
+    <footer class="w-9/12 mx-auto py-5">
+      <p class="text-center">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        ScrumptyDumpty | All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
